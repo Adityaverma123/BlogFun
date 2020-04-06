@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "546583234131",
+    "firebase_url": "https://blogfun-6403f.firebaseio.com",
+    "project_id": "blogfun-6403f",
+    "storage_bucket": "blogfun-6403f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546583234131:android:09a8448ff21284aa20e8a6",
+        "android_client_info": {
+          "package_name": "com.example.blogfun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546583234131-jjmbt39hn3o7vhuhsu0tvjd42joarpbk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsWuFGA6HTLEfGi9ZBkRyaisD6T8OeuVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546583234131-jjmbt39hn3o7vhuhsu0tvjd42joarpbk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

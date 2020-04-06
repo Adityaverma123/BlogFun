@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/postblog" android:title="Post"></item>
+    <item android:id="@+id/your_feed" android:title="Your Feeds"></item>
+    <item android:title="Logout" android:id="@+id/logout"></item>
+</menu>
