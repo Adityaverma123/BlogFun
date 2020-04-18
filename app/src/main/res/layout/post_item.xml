@@ -20,6 +20,7 @@
             android:layout_marginBottom="3dp"
             style="@style/TextAppearance.AppCompat.Body2"
             android:text="From"
+            android:fontFamily="serif"
             android:id="@+id/from"></TextView>
 
         <ImageView
@@ -39,6 +40,7 @@
             android:id="@+id/post_title"
             android:textSize="20dp"
             android:layout_marginTop="16dp"
+            android:fontFamily="serif"
             style="@style/TextAppearance.AppCompat.Title"
             android:text="Title of post"></TextView>
         <TextView
@@ -48,6 +50,7 @@
             android:ellipsize="end"
             style="@style/TextAppearance.AppCompat.Body2"
             android:text="This will be description"
+            android:fontFamily="serif"
             android:id="@+id/post_description"></TextView>
     </LinearLayout>
 

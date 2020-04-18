@@ -16,6 +16,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 import com.bumptech.glide.Glide;
@@ -35,6 +36,7 @@ public class HomeScreen extends AppCompatActivity {
     DatabaseReference mRef;
     FirebaseRecyclerOptions<getvalues>options;
     FirebaseRecyclerAdapter<getvalues,ViewHolder>firebaseRecyclerAdapter;
+    TextView loading;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -70,6 +72,7 @@ public class HomeScreen extends AppCompatActivity {
         setContentView(R.layout.activity_home_screen);
         setTitle("User Feed");
         mBloglist = findViewById(R.id.recyclerview);
+        loading=findViewById(R.id.loading);
         Intent intent = getIntent();
 
         HashMap<String, Object> imageinfo = new HashMap<>();
@@ -90,12 +93,14 @@ public class HomeScreen extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        loading.setVisibility(View.VISIBLE);
         mBloglist.setLayoutManager(new LinearLayoutManager(this));
         options=new FirebaseRecyclerOptions.Builder<getvalues>().setQuery(mRef,getvalues.class).build();
         firebaseRecyclerAdapter=new FirebaseRecyclerAdapter<getvalues, ViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull ViewHolder viewHolder, int i, @NonNull getvalues getvalues) {
-                    viewHolder.post_title.setText(getvalues.getTitle());
+                loading.setVisibility(View.INVISIBLE);
+                viewHolder.post_title.setText(getvalues.getTitle());
                     viewHolder.post_description.setText(getvalues.getDescription());
                     viewHolder.from.setText(getvalues.getFrom());
 

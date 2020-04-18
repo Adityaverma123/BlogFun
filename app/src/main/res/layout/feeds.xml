@@ -29,6 +29,7 @@
                 android:maxLines="1"
                 android:id="@+id/feed_title"
                 android:textSize="20dp"
+                android:fontFamily="serif"
                 android:layout_marginTop="16dp"
                 style="@style/TextAppearance.AppCompat.Title"
                 android:text="Title of post"></TextView>
@@ -37,6 +38,7 @@
                 android:layout_height="wrap_content"
                 android:maxLines="2"
                 android:ellipsize="end"
+                android:fontFamily="serif"
                 style="@style/TextAppearance.AppCompat.Body2"
                 android:text="This will be description"
                 android:id="@+id/feed_description"></TextView>
@@ -49,6 +51,7 @@
                 android:textColor="@android:color/white"
                 android:background="@drawable/button"
                 android:padding="15dp"
+                android:fontFamily="serif"
                 android:textSize="12dp"
                 android:layout_marginTop="10dp"
                 android:id="@+id/delete_post"></Button>

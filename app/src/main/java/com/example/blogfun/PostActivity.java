@@ -55,7 +55,7 @@ public class PostActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post);
-        title=findViewById(R.id.posttitle);
+        getSupportActionBar().hide();
         loadingbar=new ProgressDialog(this);
         description=findViewById(R.id.postdescription);
         post=findViewById(R.id.postsubmit);

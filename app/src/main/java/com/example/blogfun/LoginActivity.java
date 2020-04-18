@@ -27,6 +27,7 @@ public class LoginActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        getSupportActionBar().hide();
         email=(EditText)findViewById(R.id.loginemail);
         password=(EditText)findViewById(R.id.loginpassword);
         loadingbar=new ProgressDialog(LoginActivity.this);
@@ -70,7 +71,7 @@ public class LoginActivity extends AppCompatActivity{
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(LoginActivity.this,HomeScreen.class);
+                Intent intent=new Intent(LoginActivity.this,RegisterActivity.class);
                 startActivity(intent);
             }
         });
